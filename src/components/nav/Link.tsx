@@ -1,3 +1,11 @@
+/**
+ * @file Link.tsx
+ * @brief Link component that contains an href attribute
+ *        and can contain ReactNodes as children.
+ *
+ * @author @Zentiph
+ */
+
 import React from "react";
 
 import "./Link.css";

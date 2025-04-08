@@ -2,21 +2,22 @@
  * @file App.tsx
  * @brief The main file for the application.
  *
- * Author(s): Zentiph
+ * @author @justianisdev
+ * @author @Zentiph
  */
 
 import Navbar from "./components/nav/Navbar";
-import Home from "./pages/home";
+import Home from "./pages/Home";
 
 import "./App.css";
 
 /**
- * 
+ *
  *  USE THIS FILE FOR ROUTING NOT HOME PAGE DISPLAYS
- * 
- * 
- * 
- * 
+ *
+ *
+ *
+ *
  */
 function App() {
   return (

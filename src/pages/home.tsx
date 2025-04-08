@@ -1,18 +1,25 @@
-// this is simpily an outline of the home page for the time being... 
+/**
+ * @file Home.tsx
+ * @brief The homepage for the site.
+ *
+ * @author @justianisdev
+ */
 
-import "./home.css"
+// this is simpily an outline of the home page for the time being...
+
+import "./Home.css";
 const Home = () => {
   return (
     <>
-    <h1>Code Quilt</h1>
-    <h3>witty text or slogan here...</h3>
-    { /* sort games by x */}
-    { /* games */}
-    { /* footer */}
+      <h1>Code Quilt</h1>
+      <h3>witty text or slogan here...</h3>
+      {/* sort games by x */}
+      {/* games */}
+      {/* footer */}
 
-    {/* will implement later */}
+      {/* will implement later */}
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

@@ -2,7 +2,7 @@
  * @file Navbar.tsx
  * @brief The navbar header for the pages other than projects.
  *
- * Author(s): Zentiph
+ * @author @Zentiph
  */
 
 import "./Navbar.css";
