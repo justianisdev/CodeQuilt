@@ -11,7 +11,7 @@ import Link from "./Link";
 function Navbar() {
   return (
     <nav>
-      <Link href="index.html">
+      <Link href="/index.html">
         <img
           className="grow-on-hover"
           src="/code-quilt-logo-accent.svg"
@@ -30,7 +30,13 @@ function Navbar() {
         <li>
           {/* About this project and the devs */}
           <Link href="#">
-            <span className="grow-on-hover">About</span>
+            <span className="grow-on-hover">Meet the Team</span>
+          </Link>
+        </li>
+        <li>
+          {/* MONEY BABY WO-HOO */}
+          <Link href="#">
+            <span className="grow-on-hover">Buy us a Coffee</span>
           </Link>
         </li>
       </ul>

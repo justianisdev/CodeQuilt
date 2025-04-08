@@ -6,7 +6,8 @@
  * Author(s): Zentiph
  */
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&display=swap');
 
 :root {
     --theme-color: #780116;
@@ -16,9 +17,9 @@
     --accent-color-light: #ffde9e;
     --accent-color-muted: #d8572a;
 
-    --nav-font-family: "DM Serif Display", serif; /* TODO: add more fonts to the stack */
+    --playful-font-family: Atma, "Arial Rounded MT Bold", "Arial Narrow", sans-serif;
 
-    --navbar-height: 75px;
+    --navbar-height: 100px;
 }
 
 .grow-on-hover {
@@ -30,7 +31,7 @@
 
     transition: transform .3s ease;
 }
-.grow-on-hover:hover {
+.grow-on-hover:hover, .grow-on-hover:focus {
     transform: scale(1.05);
 
     /* Increase hit-box size while maintaining correct size */
