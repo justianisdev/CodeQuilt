@@ -1,0 +1,25 @@
+/**
+ * Author(s): Zentiph
+ */
+
+nav {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    width: 100%;
+    height: calc(var(--navbar-height) / 2);
+
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+
+    padding: 15px 5px;
+    background-color: #780116;
+    box-shadow: 0 -5px 5px 10px rgba(0, 0, 0, 0.5);
+
+    font-size: 1.75em;
+    font-family: var(--nav-font-family);
+}
+
+ul { display: contents; }
+li { display: block; }

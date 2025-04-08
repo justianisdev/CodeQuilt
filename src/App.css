@@ -1,0 +1,21 @@
+/**
+ * Author(s): Zentiph
+ *
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+
+:root {
+    --theme-color: #780116;
+    --theme-color-muted: #c32f27;
+    --accent-color: #db7c26;
+    --accent-color-bold: #f7b538;
+    --accent-color-light: #ffde9e;
+    --accent-color-muted: #d8572a;
+
+    --nav-font-family: "DM Serif Display", serif;
+
+    --navbar-height: 75px;
+}
+
+body { margin: var(--navbar-height) 0 0 0; }
