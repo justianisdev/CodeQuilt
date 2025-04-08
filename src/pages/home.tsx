@@ -12,7 +12,9 @@ const Home = () => {
   return (
     <>
       <h1>Code Quilt</h1>
-      <h3>witty text or slogan here...</h3>
+      <div id="tagline">
+        A collection of <em>byte</em>-sized web projects!
+      </div>
       {/* sort games by x */}
       {/* games */}
       {/* footer */}

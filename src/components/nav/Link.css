@@ -4,9 +4,4 @@
 
 a:link { color: var(--accent-color-bold); }
 a:visited { color: var(--accent-color) }
-a:hover {
-    color: var(--accent-color-light);
-    /* Make link hit-box bigger on hover while maintaining size */
-    padding: 15px;
-    margin: -15px;
-}
+a:hover { color: var(--accent-color-light); }
