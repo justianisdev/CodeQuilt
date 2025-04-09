@@ -8,6 +8,10 @@
 // this is simpily an outline of the home page for the time being...
 
 import "./Home.css";
+
+/**
+ * @returns Homepage
+ */
 const Home = () => {
   return (
     <>

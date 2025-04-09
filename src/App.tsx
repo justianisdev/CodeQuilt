@@ -19,6 +19,10 @@ import "./App.css";
  *
  *
  */
+
+/**
+ * @returns Application
+ */
 function App() {
   return (
     <>

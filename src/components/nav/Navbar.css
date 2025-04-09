@@ -2,13 +2,13 @@
  * Author(s): Zentiph
  */
 
+/* TODO: MAKE THE NAVBAR RESPONSIVE TO RESIZING */
 
 :root { --nav-padding: 15px; }
 
 nav {
     display: flex;
-    align-items: center;
-    gap: 30px;
+    gap: 50px;
     /* Don't include horizontal padding in the width */
     width: calc(100% - 2 * var(--nav-padding));
     height: calc(var(--navbar-height) / 2);
@@ -18,15 +18,31 @@ nav {
     z-index: 9999;
 
     padding: var(--nav-padding);
-    background-color: #780116;
+    background-color: var(--theme-color);
     box-shadow: 0 -5px 5px 10px rgba(0, 0, 0, 0.5);
 
     font-family: var(--playful-font-family);
 }
 
 img { display: block; }
+
 ul {
     display: contents;
     font-size: 2em;
 }
 li { display: block; }
+
+
+#left-nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+
+    margin-left: auto;
+}

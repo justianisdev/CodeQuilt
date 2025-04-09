@@ -1,0 +1,36 @@
+/**
+ * Author(s): Zentiph
+ */
+
+
+label { display: none; }
+
+input[type="text"], button {
+    border: 3px solid var(--theme-color-dark);
+    border-radius: 10px;
+}
+
+input[type="text"] {
+    width: auto;
+    height: 85%;
+
+    color: var(--theme-color);
+    font-size: 1.3em;
+    font-family: var(--playful-font-family);
+
+    padding: 10px;
+    box-sizing: border-box;
+
+    background-color: var(--background-color);
+}
+input[type="text"]::placeholder {
+    color: var(--theme-color-muted);
+}
+
+button {
+    aspect-ratio: 1 / 1;
+    height: 100%;
+
+    background-color: var(--background-color);
+}
+button img { width: 100%; }

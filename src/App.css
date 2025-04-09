@@ -6,16 +6,17 @@
  * Author(s): Zentiph
  */
 
-
 @import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --theme-color: #780116;
-    --theme-color-muted: #c32f27;
-    --accent-color: #db7c26;
-    --accent-color-bold: #f7b538;
+    --theme-color:        #780116;
+    --theme-color-muted:  #764750;
+    --theme-color-dark:   #4b000e;
+    --accent-color:       #db7c26;
+    --accent-color-bold:  #f7b538;
     --accent-color-light: #ffde9e;
     --accent-color-muted: #d8572a;
+    --background-color:   #f3ccbf;
 
     --playful-font-family: Atma, "Arial Rounded MT Bold", "Arial Narrow", sans-serif;
 
@@ -39,4 +40,8 @@
     margin: -15px;
 }
 
-body { margin: var(--navbar-height) 0 0 0; }
+body {
+    margin: var(--navbar-height) 0 0 0;
+    background-image: url("/quilt-pattern.png");
+    background-repeat: repeat;
+}
