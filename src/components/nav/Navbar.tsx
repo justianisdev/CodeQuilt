@@ -19,7 +19,7 @@ function Navbar() {
       <div id="left-nav">
         <Link href="/index.html">
           <img
-            className="grow-on-hover"
+            className="transition-on-hover grow-on-hover"
             src="/code-quilt-logo-accent.svg"
             alt="CodeQuilt"
           />
@@ -29,19 +29,23 @@ function Navbar() {
           <li>
             {/* Browse all games rather than the select few displayed on the homepage */}
             <Link href="#">
-              <span className="grow-on-hover">Browse</span>
+              <span className="transition-on-hover grow-on-hover">Browse</span>
             </Link>
           </li>
           <li>
             {/* About this project and the devs */}
             <Link href="#">
-              <span className="grow-on-hover">Meet the Team</span>
+              <span className="transition-on-hover grow-on-hover">
+                Meet the Team
+              </span>
             </Link>
           </li>
           <li>
             {/* MONEY BABY WO-HOO */}
             <Link href="#">
-              <span className="grow-on-hover">Buy us a Coffee</span>
+              <span className="transition-on-hover grow-on-hover">
+                Buy us a Coffee
+              </span>
             </Link>
           </li>
         </ul>

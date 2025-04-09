@@ -31,8 +31,6 @@
     object-fit: cover;
 
     display: inline-block;
-
-    transition: all .3s ease;
 }
 .grow-on-hover:hover, .grow-on-hover:focus {
     transform: scale(1.05);
