@@ -8,13 +8,17 @@ This project is simply a creative outlet for the developers and a collaborative 
 ## Site Structure
 The site relatively follows the structure below:
 ```
-index.html (homepage)
-|- Projects Page
+App
+|- Homepage
+|  |- Featured Project 1
+|  |- Featured Project 2
+|  |- ...
+|- Browse Page
 |  |- Project 1
 |  |- Project 2
 |  |- ...
-|- About Page
-|- Meet the Developers
+|- About Us Page
+|- Donation Page
 ```
 
 ## Contributing
