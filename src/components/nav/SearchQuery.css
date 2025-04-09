@@ -23,14 +23,19 @@ input[type="text"] {
 
     background-color: var(--background-color);
 }
-input[type="text"]::placeholder {
-    color: var(--theme-color-muted);
+input[type="text"]::placeholder { color: var(--theme-color-muted); }
+input[type="text"]:focus {
+    background-color: white;
+    color: black;
 }
 
 button {
     aspect-ratio: 1 / 1;
     height: 100%;
 
+    cursor: pointer;
+
     background-color: var(--background-color);
 }
+button:hover { background-color: white; }
 button img { width: 100%; }

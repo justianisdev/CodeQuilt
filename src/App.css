@@ -41,6 +41,7 @@
 }
 
 body {
+    /* TODO: make background img be centered based on screen size */
     margin: var(--navbar-height) 0 0 0;
     background-image: url("/quilt-pattern.png");
     background-repeat: repeat;
