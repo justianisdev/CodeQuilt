@@ -13,15 +13,21 @@ import "./SearchQuery.css";
  *
  * @returns      Search bar and search submit button in an HTML form
  */
-function SearchQuery({ action }: { action: string }) {
+const SearchQuery = ({
+  action,
+  method,
+}: {
+  action: string;
+  method: string;
+}) => {
   return (
-    <form action={action} method="post" className="search">
-      <label htmlFor="search-bar">Search for a project</label>
+    <form action={action} method={method} className="search">
+      <label htmlFor="search">Search for a project</label>
       <input
         type="text"
         placeholder="Find a project..."
-        id="search-bar"
-        name="search-bar"
+        id="search"
+        name="search"
         className="transition-on-hover"
       ></input>
 
@@ -30,6 +36,6 @@ function SearchQuery({ action }: { action: string }) {
       </button>
     </form>
   );
-}
+};
 
 export default SearchQuery;

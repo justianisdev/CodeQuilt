@@ -6,14 +6,14 @@
  */
 
 import Link from "./Link";
-import SearchBar from "./SearchQuery";
+import SearchQuery from "./SearchQuery";
 
 import "./Navbar.css";
 
 /**
  * @returns Navbar header for the pages other than projects
  */
-function Navbar() {
+const Navbar = () => {
   return (
     <nav>
       <div id="left-nav">
@@ -24,6 +24,7 @@ function Navbar() {
             alt="CodeQuilt"
           />
         </Link>
+
         {/* TODO: UPDATE THESE LINKS WHEN AVAILABLE */}
         <ul>
           <li>
@@ -50,10 +51,11 @@ function Navbar() {
           </li>
         </ul>
       </div>
-      <SearchBar action="#" />
+
+      <SearchQuery action="#" method="get" />
       {/* TODO: eventually... action="search-processor.php"*/}
     </nav>
   );
-}
+};
 
 export default Navbar;
