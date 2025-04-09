@@ -17,13 +17,15 @@ const Navbar = () => {
   return (
     <nav>
       <div id="left-nav">
-        <Link href="/index.html">
-          <img
-            className="transition-on-hover grow-on-hover"
-            src="/code-quilt-logo-accent.svg"
-            alt="CodeQuilt"
-          />
-        </Link>
+        <div id="logo">
+          <Link href="/">
+            <img
+              className="transition-on-hover grow-on-hover"
+              src="/code-quilt-logo-accent.svg"
+              alt="CodeQuilt"
+            />
+          </Link>
+        </div>
 
         {/* TODO: UPDATE THESE LINKS WHEN AVAILABLE */}
         <ul>
@@ -52,7 +54,7 @@ const Navbar = () => {
         </ul>
       </div>
 
-      <SearchQuery action="#" method="get" />
+      <SearchQuery action="#" method="GET" />
       {/* TODO: eventually... action="search-processor.php"*/}
     </nav>
   );

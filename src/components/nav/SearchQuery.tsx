@@ -8,8 +8,16 @@
 import "./SearchQuery.css";
 
 /**
- * @param action The action to enact after completing the form;
- *               The form is submitted with the POST method
+ * A URL that can be used in a form's action attribute.
+ */
+type ActionURL =
+  | `${"http" | "https"}://${string}`
+  | `/${string}`
+  | `#${string}`;
+
+/**
+ * @param action The action to enact after completing the form
+ * @param method The method to use for form submission
  *
  * @returns      Search bar and search submit button in an HTML form
  */
@@ -17,8 +25,8 @@ const SearchQuery = ({
   action,
   method,
 }: {
-  action: string;
-  method: string;
+  action: ActionURL;
+  method: "GET" | "POST";
 }) => {
   return (
     <form action={action} method={method} className="search">

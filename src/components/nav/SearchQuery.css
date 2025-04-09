@@ -24,10 +24,13 @@ input[type="text"] {
     background-color: var(--background-color);
 }
 input[type="text"]::placeholder { color: var(--theme-color-muted); }
-input[type="text"]:focus {
+
+/* When the box is focused or has user input in it */
+input[type="text"]:focus, input[type="text"]:not(:placeholder-shown) {
     background-color: white;
     color: black;
 }
+input[type="text"]:focus::placeholder { color: #454545; }
 
 button {
     aspect-ratio: 1 / 1;
