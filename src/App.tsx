@@ -6,7 +6,6 @@
  * @author @Zentiph
  */
 
-import Navbar from "./components/nav/Navbar";
 import Home from "./pages/Home";
 
 import "./App.css";
@@ -24,12 +23,7 @@ import "./App.css";
  * @returns Application
  */
 function App() {
-  return (
-    <>
-      <Navbar />
-      <Home />
-    </>
-  );
+  return <Home />;
 }
 
 export default App;

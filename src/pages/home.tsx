@@ -7,6 +7,8 @@
 
 // this is simpily an outline of the home page for the time being...
 
+import Navbar from "../components/nav/Navbar";
+
 import "./Home.css";
 
 /**
@@ -15,6 +17,8 @@ import "./Home.css";
 const Home = () => {
   return (
     <>
+      <Navbar />
+
       <h1>Code Quilt</h1>
       <div id="tagline">
         A collection of <em>byte</em>-sized web projects!
