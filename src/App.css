@@ -23,6 +23,8 @@
     --navbar-height: 100px;
 }
 
+.transition-on-hover { transition: all .3s ease; }
+
 .grow-on-hover {
     width: 100%;
     height: 100%;
@@ -30,7 +32,7 @@
 
     display: inline-block;
 
-    transition: transform .3s ease;
+    transition: all .3s ease;
 }
 .grow-on-hover:hover, .grow-on-hover:focus {
     transform: scale(1.05);

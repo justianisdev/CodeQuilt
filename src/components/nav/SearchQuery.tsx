@@ -22,9 +22,10 @@ function SearchQuery({ action }: { action: string }) {
         placeholder="Find a project..."
         id="search-bar"
         name="search-bar"
+        className="transition-on-hover"
       ></input>
 
-      <button type="submit">
+      <button type="submit" className="transition-on-hover">
         <img src="/search.svg" alt="Search" />
       </button>
     </form>
