@@ -21,7 +21,7 @@ const Navbar = () => {
           <Link href="/">
             <img
               className="transition-on-hover grow-on-hover"
-              src="/code-quilt-logo-accent.svg"
+              src="/code-quilt-logo-accent-bold.svg"
               alt="CodeQuilt"
             />
           </Link>
