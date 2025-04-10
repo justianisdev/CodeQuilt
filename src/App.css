@@ -23,7 +23,7 @@
     --navbar-height: 100px;
 }
 
-.transition-on-hover { transition: all .3s ease; }
+.transition { transition: all 0.3s ease; }
 
 .grow-on-hover {
     width: 100%;
@@ -45,4 +45,5 @@ body {
     margin: var(--navbar-height) 0 0 0;
     background-image: url("/quilt-pattern.png");
     background-repeat: repeat;
+    background-position: center;
 }

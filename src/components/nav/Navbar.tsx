@@ -20,7 +20,7 @@ const Navbar = () => {
         <div id="logo">
           <Link href="/">
             <img
-              className="transition-on-hover grow-on-hover"
+              className="transition grow-on-hover"
               src="/code-quilt-logo-accent-bold.svg"
               alt="CodeQuilt"
             />
@@ -32,23 +32,19 @@ const Navbar = () => {
           <li>
             {/* Browse all games rather than the select few displayed on the homepage */}
             <Link href="#">
-              <span className="transition-on-hover grow-on-hover">Browse</span>
+              <span className="transition grow-on-hover">Browse</span>
             </Link>
           </li>
           <li>
             {/* About this project and the devs */}
             <Link href="#">
-              <span className="transition-on-hover grow-on-hover">
-                Meet the Team
-              </span>
+              <span className="transition grow-on-hover">Meet the Team</span>
             </Link>
           </li>
           <li>
             {/* MONEY BABY WO-HOO */}
             <Link href="#">
-              <span className="transition-on-hover grow-on-hover">
-                Buy us a Coffee
-              </span>
+              <span className="transition grow-on-hover">Buy us a Coffee</span>
             </Link>
           </li>
         </ul>

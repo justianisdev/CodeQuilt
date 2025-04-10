@@ -5,6 +5,7 @@
  * @author @Zentiph
  */
 
+import { useState } from "react";
 import "./SearchQuery.css";
 
 /**
@@ -28,19 +29,43 @@ const SearchQuery = ({
   action: ActionURL;
   method: "GET" | "POST";
 }) => {
+  const [isSearchVisible, setSearchVisible] = useState(false);
+  const toggleSearch = () => {
+    setSearchVisible((prev) => !prev);
+  };
+
+  const [isDropdownVisible, setDropdownVisible] = useState(false);
+  const toggleDropdown = () => {
+    setDropdownVisible((prev) => !prev);
+  };
+
   return (
     <form action={action} method={method} className="search">
+      <button
+        type="button"
+        onClick={toggleDropdown}
+        className={`${isDropdownVisible ? "rotated" : ""}`}
+        id="dropdown-button"
+      >
+        <img src="/dropdown.svg" className="transition" alt="Dropdown arrow" />
+      </button>
+
       <label htmlFor="search">Search for a project</label>
       <input
         type="text"
         placeholder="Find a project..."
         id="search"
         name="search"
-        className="transition-on-hover"
+        className={`transition ${isSearchVisible ? "visible" : "hidden"}`}
       ></input>
 
-      <button type="submit" className="transition-on-hover">
-        <img src="/search.svg" alt="Search" />
+      <button
+        type="button"
+        onClick={toggleSearch}
+        className={`${isSearchVisible ? "rotated" : ""}`}
+        id="search-button"
+      >
+        <img src="/search.svg" className="transition" alt="Search" />
       </button>
     </form>
   );

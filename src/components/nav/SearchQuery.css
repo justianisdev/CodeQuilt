@@ -5,6 +5,17 @@
 
 label { display: none; }
 
+button {
+    aspect-ratio: 1 / 1;
+    height: 90%;
+
+    cursor: pointer;
+
+    background-color: var(--background-color);
+}
+button:hover { background-color: white; }
+button img { width: 100%; }
+
 input[type="text"], button {
     border: 3px solid var(--theme-color-dark);
     border-radius: 10px;
@@ -12,7 +23,7 @@ input[type="text"], button {
 
 input[type="text"] {
     width: auto;
-    height: 85%;
+    height: 90%;
 
     color: var(--theme-color);
     font-size: 1.3em;
@@ -25,6 +36,20 @@ input[type="text"] {
 }
 input[type="text"]::placeholder { color: var(--theme-color-muted); }
 
+#dropdown-button { display: none; }
+#dropdown-button.rotated img { transform: rotate(90deg); }
+
+#search-button.rotated img { transform: rotate(360deg); }
+
+@media (max-width: 1200px) {
+    input[type="text"].hidden { display: none; }
+    input[type="text"].visible { display: block; }
+}
+
+@media (max-width: 950px) {
+    #dropdown-button { display: block; }
+}
+
 /* When the box is focused or has user input in it */
 input[type="text"]:focus, input[type="text"]:not(:placeholder-shown) {
     background-color: white;
@@ -32,13 +57,3 @@ input[type="text"]:focus, input[type="text"]:not(:placeholder-shown) {
 }
 input[type="text"]:focus::placeholder { color: #454545; }
 
-button {
-    aspect-ratio: 1 / 1;
-    height: 100%;
-
-    cursor: pointer;
-
-    background-color: var(--background-color);
-}
-button:hover { background-color: white; }
-button img { width: 100%; }
