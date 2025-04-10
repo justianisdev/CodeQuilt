@@ -18,10 +18,23 @@ nav {
     z-index: 9999;
 
     padding: var(--nav-padding);
+    padding-bottom: 25px;
     background-color: var(--theme-color);
     box-shadow: 0 -5px 5px 10px rgba(0, 0, 0, 0.5);
 
     font-family: var(--playful-font-family);
+}
+/* add stitch effect */
+nav::after {
+    content: "";
+
+    position: absolute;
+    bottom: 10px;
+    left: var(--nav-padding);
+    right: var(--nav-padding);
+    height: 6px;
+
+    background-image: url("/stitch-accent-bold.svg");
 }
 
 #logo { flex-shrink: 0; }
