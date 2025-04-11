@@ -5,6 +5,15 @@
  * @author @Zentiph
  */
 
+/**
+ * IMPORTANT:
+ *
+ * THIS FILE IS CURRENTLY UNUSED SINCE COMPONENTS
+ * GOT MOVED AROUND BUT DO NOT DELETE IT!
+ *
+ * IT WILL BE REUSED LATER!
+ */
+
 import { useState } from "react";
 import "./SearchQuery.css";
 
@@ -62,10 +71,10 @@ const SearchQuery = ({
       <button
         type="button"
         onClick={toggleSearch}
-        className={`${isSearchVisible ? "rotated" : ""}`}
+        className={`transition ${isSearchVisible ? "rotated" : ""}`}
         id="search-button"
       >
-        <img src="/search.svg" className="transition" alt="Search" />
+        <img src="/search.svg" alt="Search" />
       </button>
     </form>
   );

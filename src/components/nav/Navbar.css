@@ -15,10 +15,10 @@ nav {
 
     position: fixed;
     top: 0;
-    z-index: 9999;
+    z-index: 255;
 
     padding: var(--nav-padding);
-    padding-bottom: 25px;
+    padding-bottom: 30px;
     background-color: var(--theme-color);
     box-shadow: 0 -5px 5px 10px rgba(0, 0, 0, 0.5);
 
@@ -30,33 +30,52 @@ nav::after {
 
     position: absolute;
     bottom: 10px;
-    left: var(--nav-padding);
-    right: var(--nav-padding);
-    height: 6px;
+    left: 0;
+    right: 0;
+    height: 3px;
 
     background-image: url("/stitch-accent-bold.svg");
+    background-position: center;
 }
 
-#logo { flex-shrink: 0; }
-img { display: block; }
+img { display: inline; }
 
 ul {
-    display: contents;
-    font-size: 2em;
-}
-li { display: block; }
-
-
-#left-nav {
     display: flex;
     align-items: center;
     gap: 30px;
+    font-size: 2em;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    height: 100%;
 }
-.search {
+li {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    gap: 10px;
+    height: 100%;
+ }
 
+.img-link {
+    aspect-ratio: 1 / 1;
+    height: 90%;
+    display: flex;
+
+    padding: 3px;
+    box-sizing: border-box;
+
+    cursor: pointer;
+}
+.img-link img { width: auto; }
+
+#logo { flex-shrink: 0; }
+#logo img {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+    display: block;
+}
+#external-nav {
     margin-left: auto;
+    gap: 15px;
 }

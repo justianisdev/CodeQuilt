@@ -18,13 +18,21 @@ import "./Link.css";
  */
 const Link = ({
   href,
+  className,
   children,
 }: {
   href: string;
+  className?: string;
   children: React.ReactNode;
 }) => {
+  const isExternal = /^https?:\/\//.test(href);
+
   return (
-    <a href={href} className="nav-link">
+    <a
+      href={href}
+      className={"nav-link " + className}
+      target={isExternal ? "_blank" : ""}
+    >
       {children}
     </a>
   );
