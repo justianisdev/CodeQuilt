@@ -23,3 +23,9 @@ App
 
 ## Contributing
 We are not currently open to adding new people to the project as permanent creators, but bug fixes and small improvements are always welcome! Create an issue or pull request for those.
+
+## License
+This project is licensed under the GNU General Public License v3.0.
+See the [LICENSE.md](LICENSE.md) for details.
+
+Copyright (C) 2025 CodeQuilt
