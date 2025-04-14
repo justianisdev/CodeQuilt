@@ -25,6 +25,6 @@ We are not currently open to adding new people to the project as permanent creat
 
 ## License
 This project is licensed under the GNU General Public License v3.0.
-See the [LICENSE.md](LICENSE.md) for details.
+See [LICENSE.md](LICENSE.md) for details.
 
 Copyright (C) 2025 CodeQuilt
