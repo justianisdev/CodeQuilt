@@ -18,7 +18,6 @@ App
 |  |- Project 2
 |  |- ...
 |- About Us Page
-|- Donation Page
 ```
 
 ## Contributing
