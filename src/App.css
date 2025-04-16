@@ -18,41 +18,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --theme-color:        #780116;
-    --theme-color-muted:  #764750;
-    --theme-color-dark:   #4b000e;
-    --accent-color:       #db7c26;
-    --accent-color-bold:  #f7b538;
-    --accent-color-light: #ffde9e;
-    --accent-color-muted: #d8572a;
-    --background-color:   #f3ccbf;
+   --theme-color:        #780116;
+   --theme-color-muted:  #764750;
+   --theme-color-dark:   #4b000e;
+   --accent-color:       #db7c26;
+   --accent-color-bold:  #f7b538;
+   --accent-color-light: #ffde9e;
+   --accent-color-muted: #d8572a;
+   --background-color:   #f3ccbf;
 
-    --playful-font-family: Atma, "Arial Rounded MT Bold", "Arial Narrow", sans-serif;
+   --playful-font-family: Atma, "Arial Rounded MT Bold", "Arial Narrow", sans-serif;
 
-    --navbar-height: 100px;
+   --main-site-width: 70%;
+
+   --navbar-height: 50px;
+   --navbar-after-height: 10px;
 }
 
 .transition { transition: all 0.3s ease; }
 
 .grow-on-hover {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
 
-    display: inline-block;
+   display: inline-block;
 }
 .grow-on-hover:hover, .grow-on-hover:focus {
-    transform: scale(1.05);
+   transform: scale(1.05);
 
-    /* Increase hit-box size while maintaining correct size */
-    padding: 15px;
-    margin: -15px;
-}
-
-body {
-    /* TODO: make background img be centered based on screen size */
-    margin: var(--navbar-height) 0 0 0;
-    background-image: url("/quilt-pattern.png");
-    background-repeat: repeat;
-    background-position: center;
+   /* Increase hit-box size while maintaining correct size */
+   padding: 15px;
+   margin: -15px;
 }

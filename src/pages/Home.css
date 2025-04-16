@@ -10,5 +10,13 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
  * GNU General Public License for more details.
  *
- * Author(s):
+ * Author(s): Zentiph
  */
+
+body {
+   margin: var(--navbar-height) auto 0 auto;
+   background-image: url("/quilt-pattern.png");
+   background-repeat: repeat;
+   background-position: center;
+   width: var(--main-site-width);
+}

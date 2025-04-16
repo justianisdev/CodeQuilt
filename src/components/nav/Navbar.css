@@ -15,78 +15,145 @@
 
 /* TODO: MAKE THE NAVBAR RESPONSIVE TO RESIZING */
 
-:root { --nav-padding: 15px; }
+:root {
+   --navbar-padding-top: 15px;
+   /* To match 80% width effect for main site */
+   --navbar-padding-left-right: calc((100% - var(--main-site-width)) / 2);
+   --navbar-stitch-height: calc(var(--navbar-height) / 40);
+}
 
 nav {
-    display: flex;
-    gap: 50px;
-    /* Don't include horizontal padding in the width */
-    width: calc(100% - 2 * var(--nav-padding));
-    height: calc(var(--navbar-height) / 2);
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 200;
 
-    position: fixed;
-    top: 0;
-    z-index: 255;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   /* Don't include horizontal padding in the width */
+   width: calc(100% - 2 * var(--navbar-padding-left-right));
+   height: calc(var(--navbar-height) / 2);
 
-    padding: var(--nav-padding);
-    padding-bottom: 30px;
-    background-color: var(--theme-color);
-    box-shadow: 0 -5px 5px 10px rgba(0, 0, 0, 0.5);
+   padding: var(--navbar-padding-top) var(--navbar-padding-left-right) 30px var(--navbar-padding-left-right);
+   background-color: var(--theme-color);
+   box-shadow: 0 -5px 5px 10px rgba(0, 0, 0, 0.5);
 
-    font-family: var(--playful-font-family);
+   font-family: var(--playful-font-family);
 }
 /* add stitch effect */
 nav::after {
-    content: "";
+   content: "";
 
-    position: absolute;
-    bottom: 10px;
-    left: 0;
-    right: 0;
-    height: 3px;
+   position: absolute;
+   bottom: var(--navbar-after-height);
+   left: 0;
+   right: 0;
+   height: var(--navbar-stitch-height);
+   min-height: 2px;
 
-    background-image: url("/stitch-accent-bold.svg");
-    background-position: center;
+   background-image: url("/stitch-accent-bold.svg");
+   background-position: center;
+}
+
+#hamburger {
+    display: none; /* Hidden by default */
+    cursor: pointer;
+    background: none;
+    border: none;
 }
 
 img { display: inline; }
 
 ul {
+   display: flex;
+   align-items: center;
+   gap: 30px;
+   font-size: 1.5em;
+   padding: 0;
+   margin: 0;
+   list-style: none;
+   height: 100%;
+}
+li {
+   display: flex;
+   align-items: center;
+   height: 100%;
+}
+
+/* Remove width outside spacing before going to hamburger men */
+@media (max-width: 950px) {
+    nav {
+        width: 100%;
+        padding: var(--navbar-padding-top) 0 30px 0;
+    }
+
+    #logo { margin-left: 10px; }
+    #right-nav ul { margin-right: 10px; }
+}
+/* Dropdown menu for smaller widths */
+@media (max-width: 670px) {
+    ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: calc(var(--navbar-height) + var(--navbar-padding-top) / 2);
+        right: 0;
+        background-color: var(--theme-color);
+        width: 200px;
+        padding: 10px;
+        z-index: 256;
+    }
+    ul.show { display: flex; }
+    #hamburger {
+        display: block;
+        margin-right: 10px;
+    }
+}
+
+#left-nav {
     display: flex;
     align-items: center;
     gap: 30px;
-    font-size: 2em;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    height: 100%;
 }
-li {
-    display: flex;
-    align-items: center;
-    height: 100%;
- }
 
-.img-link {
-    aspect-ratio: 1 / 1;
-    height: 90%;
-    display: flex;
-
-    padding: 3px;
-    box-sizing: border-box;
-
-    cursor: pointer;
+#right-nav {
+   display: contents;
+   margin-left: auto;
+   gap: 20px;
 }
-.img-link img { width: auto; }
+#right-nav a, button {
+   min-width: 45px;
+   min-height: 45px;
+   margin-left: auto;
+}
 
-#logo { flex-shrink: 0; }
-#logo img {
+.img-link, button {
+   height: 90%;
+   display: flex;
+
+   padding: 3px;
+   box-sizing: border-box;
+
+   cursor: pointer;
+}
+.img-link img {
+   aspect-ratio: 1 / 1;
+   width: auto;
+}
+button img {
     height: 100%;
     width: auto;
-    object-fit: contain;
-    display: block;
+    aspect-ratio: 1 / 1;
 }
-#external-nav {
-    margin-left: auto;
-    gap: 15px;
+
+
+#logo { flex-shrink: 0; }
+#logo a { height: 30px; }
+#logo img {
+   height: 100%;
+   width: auto;
+   object-fit: contain;
+   display: block;
 }
+
