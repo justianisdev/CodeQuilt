@@ -1,17 +1,22 @@
-/**
- * Copyright (C) 2025 CodeQuilt
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
- * GNU General Public License for more details.
- *
- * Author(s): Zentiph
- */
+/*
+Styles for the navbar component.
+Author: Zentiph
+
+Copyright (C) 2025  CodeQuilt
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+*/
 
 /* TODO: MAKE THE NAVBAR RESPONSIVE TO RESIZING */
 
@@ -37,7 +42,7 @@ nav {
 
    padding: var(--navbar-padding-top) var(--navbar-padding-left-right) 30px var(--navbar-padding-left-right);
    background-color: var(--theme-color);
-   box-shadow: 0 -5px 5px 10px rgba(0, 0, 0, 0.5);
+   /* box-shadow: 0 -5px 5px 10px rgba(0, 0, 0, 0.5); */
 
    font-family: var(--playful-font-family);
 }
@@ -111,6 +116,8 @@ li {
     }
 }
 
+#left-nav, #right-nav { height: 35px; }
+
 #left-nav {
     display: flex;
     align-items: center;
@@ -122,7 +129,7 @@ li {
    margin-left: auto;
    gap: 20px;
 }
-#right-nav a, button {
+#right-nav .link, button {
    min-width: 45px;
    min-height: 45px;
    margin-left: auto;
@@ -147,9 +154,13 @@ button img {
     aspect-ratio: 1 / 1;
 }
 
+/* Override visited color for navbar */
+.link:visited { color: var(--accent-color-bold) }
 
-#logo { flex-shrink: 0; }
-#logo a { height: 30px; }
+#logo {
+   flex-shrink: 0;
+   height: 100%;
+}
 #logo img {
    height: 100%;
    width: auto;

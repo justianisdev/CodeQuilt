@@ -1,5 +1,5 @@
 /*
-Styles for the home page.
+Styles for the link component.
 Author: Zentiph
 
 Copyright (C) 2025  CodeQuilt
@@ -19,10 +19,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
 
-body {
-   margin: var(--navbar-height) auto 0 auto;
-   background-image: url("/quilt-pattern.png");
-   background-repeat: repeat;
-   background-position: center;
-   width: var(--main-site-width);
-}
+a:link { color: var(--accent-color-bold); }
+a:visited { color: var(--accent-color) }
+a:hover { color: var(--accent-color-light); }
