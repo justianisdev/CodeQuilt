@@ -1,6 +1,6 @@
-![code-quilt-logo-accent-bold](https://github.com/user-attachments/assets/db0ceb91-d13e-413c-ae08-1b4adcc2ff34)
-
-# CodeQuilt
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/db0ceb91-d13e-413c-ae08-1b4adcc2ff34" alt="CodeQuilt logo">
+</p>
 
 CodeQuilt is a collection of web projects made by developer friends, where each project is a square in the larger patchwork.
 
