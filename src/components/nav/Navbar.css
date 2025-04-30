@@ -62,13 +62,15 @@ nav::after {
 }
 
 #hamburger {
-    display: none; /* Hidden by default */
-    cursor: pointer;
-    background: none;
-    border: none;
+   display: none; /* Hidden by default */
+   cursor: pointer;
+   background: none;
+   border: none;
 }
 
-img { display: inline; }
+img {
+   display: inline;
+}
 
 ul {
    display: flex;
@@ -88,40 +90,47 @@ li {
 
 /* Remove width outside spacing before going to hamburger men */
 @media (max-width: 950px) {
-    nav {
-        width: 100%;
-        padding: var(--navbar-padding-top) 0 30px 0;
-    }
+   nav {
+      width: 100%;
+      padding: var(--navbar-padding-top) 0 30px 0;
+   }
 
-    #logo { margin-left: 10px; }
-    #right-nav ul { margin-right: 10px; }
+   #logo { margin-left: 10px; }
+   #right-nav ul { margin-right: 10px; }
 }
 /* Dropdown menu for smaller widths */
 @media (max-width: 670px) {
-    ul {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: calc(var(--navbar-height) + var(--navbar-padding-top) / 2);
-        right: 0;
-        background-color: var(--theme-color);
-        width: 200px;
-        padding: 10px;
-        z-index: 256;
+   ul {
+      display: none;
+      flex-direction: column;
+      gap: 10px;
+
+      top: calc(var(--navbar-height) + var(--navbar-padding-top) / 2);
+      right: 0;
+      width: 150px;
+      padding: 10px;
+      height: auto;
+
+      background-color: var(--theme-color);
+
+      z-index: 256;
+      position: fixed;
     }
-    ul.show { display: flex; }
-    #hamburger {
-        display: block;
-        margin-right: 10px;
-    }
+   ul.show { display: flex; }
+   #hamburger {
+      display: block;
+      margin-right: 10px;
+   }
 }
 
-#left-nav, #right-nav { height: 35px; }
+#left-nav, #right-nav {
+   height: 35px;
+}
 
 #left-nav {
-    display: flex;
-    align-items: center;
-    gap: 30px;
+   display: flex;
+   align-items: center;
+   gap: 30px;
 }
 
 #right-nav {
@@ -149,13 +158,15 @@ li {
    width: auto;
 }
 button img {
-    height: 100%;
-    width: auto;
-    aspect-ratio: 1 / 1;
+   height: 100%;
+   width: auto;
+   aspect-ratio: 1 / 1;
 }
 
 /* Override visited color for navbar */
-.link:visited { color: var(--accent-color-bold) }
+.link:visited {
+   color: var(--accent-color-bold)
+}
 
 #logo {
    flex-shrink: 0;

@@ -19,6 +19,12 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
 
-a:link { color: var(--accent-color-bold); }
-a:visited { color: var(--accent-color) }
-a:hover { color: var(--accent-color-light); }
+a:link {
+   color: var(--accent-color-bold);
+}
+a:visited {
+   color: var(--accent-color)
+}
+a:hover {
+   color: var(--accent-color-light);
+}

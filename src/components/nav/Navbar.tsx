@@ -82,7 +82,7 @@ const Navbar = () => {
             <Link href="https://ko-fi.com/zentiph" className="img-link">
               <img
                 src="/ko-fi.svg"
-                alt="CodeQuilt Ko-Fi for Donations"
+                alt="CodeQuilt Ko-Fi for donations"
                 className="transition grow-on-hover"
               />
             </Link>

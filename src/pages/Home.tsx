@@ -34,15 +34,16 @@ const Home = () => {
     <>
       <Navbar />
 
-      <h1>Code Quilt</h1>
-      <div id="tagline">
-        A collection of <em>byte</em>-sized web projects!
-      </div>
-      {/* sort games by x */}
-      {/* games */}
-      {/* footer */}
-
-      {/* will implement later */}
+      <header>
+        <h1>Code Quilt</h1>
+        <div id="tagline">
+          A collection of <em>byte</em>-sized web projects!
+        </div>
+        {/* sort games by x */}
+        {/* games */}
+        {/* footer */}
+        {/* will implement later */}
+      </header>
     </>
   );
 };
