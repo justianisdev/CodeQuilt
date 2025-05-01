@@ -27,8 +27,6 @@ import Navbar from "../components/nav/Navbar";
 
 import "./Home.css";
 
-/* TODO: FIX RESIZING AT SMALLER WIDTHS */
-
 /**
  * @returns Homepage
  */
@@ -42,7 +40,7 @@ const Home = () => {
           <img src="/code-quilt-logo.svg" alt="CodeQuilt" />
         </h1>
         <div id="tagline">
-          A collection of <em>byte</em>-sized web projects
+          A collection of <em>byte</em>‑sized web projects
         </div>
       </header>
 

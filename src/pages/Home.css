@@ -28,11 +28,11 @@ body {
 }
 
 header {
-   /* Account for the navbar height, it's after effect height,
+   /* Account for the navbar height, its after effect height,
       and add some extra spacing */
    margin-top: calc(var(--navbar-height)
                + var(--navbar-after-height)
-               + 75px);
+               + 100px);
    text-align: center;
 }
 header h1 {
@@ -47,4 +47,21 @@ header h1 img {
 #tagline {
    font-size: 1.7em;
    font-family: var(--theme-font-family);
+}
+
+@media (max-width: 800px) {
+   header h1 {
+      width: 300px;
+   }
+   #tagline {
+      font-size: 1.4em;
+   }
+}
+@media (max-width: 450px) {
+   header h1 {
+      width: 95%;
+   }
+   #tagline {
+      font-size: 1.2em;
+   }
 }
