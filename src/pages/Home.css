@@ -36,32 +36,36 @@ header {
    text-align: center;
 }
 header h1 {
-   width: 400px;
+   display: none;
+}
+header img {
+   width: 700px;
    margin: auto;
    margin-bottom: 20px;
 }
-header h1 img {
-   width: 100%;
-   height: auto;
-}
 #tagline {
-   font-size: 1.7em;
+   font-size: 2em;
    font-family: var(--theme-font-family);
 }
 
-@media (max-width: 800px) {
-   header h1 {
-      width: 300px;
+@media (max-width: 1000px) {
+   header img {
+      width: 500px;
    }
    #tagline {
-      font-size: 1.4em;
+      font-size: 1.5em;
    }
 }
-@media (max-width: 450px) {
-   header h1 {
-      width: 95%;
+@media (max-width: 725px) {
+   header img {
+      width: 400px;
+   }
+}
+@media (max-width: 575px) {
+   header img {
+      width: 100%;
    }
    #tagline {
-      font-size: 1.2em;
+      font-size: 1.3em;
    }
 }

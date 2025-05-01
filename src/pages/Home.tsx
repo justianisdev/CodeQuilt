@@ -20,8 +20,6 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-// this is simply an outline of the home page for the time being...
-
 import Footer from "../components/Footer";
 import Navbar from "../components/nav/Navbar";
 
@@ -36,16 +34,17 @@ const Home = () => {
       <Navbar />
 
       <header>
-        <h1>
-          <img src="/code-quilt-logo.svg" alt="CodeQuilt" />
-        </h1>
+        <img src="/code-quilt-logo.svg" alt="CodeQuilt" />
+        <h1>CodeQuilt</h1>
         <div id="tagline">
           A collection of <em>byte</em>‑sized web projects
         </div>
       </header>
 
-      {/* sort games by x */}
-      {/* games */}
+      {/* TODO: sort games by x */}
+      {/* Note from Zen: Maybe move this ^ to the browse page and simply display featured games on the main page? */}
+      {/* TODO: games */}
+
       <Footer />
     </>
   );
