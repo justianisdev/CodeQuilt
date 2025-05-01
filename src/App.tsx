@@ -24,7 +24,7 @@ import Home from "./pages/Home";
 
 import "./App.css";
 
-/* USE THIS FILE FOR ROUTING, NOT HOME PAGE DISPLAYS */
+/* TODO: IMPLEMENT ROUTING */
 
 /**
  * @returns Application

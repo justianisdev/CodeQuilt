@@ -1,7 +1,6 @@
 /**
- * @file Home.tsx
- * @brief The homepage for the site.
- * @author @justianisdev
+ * @file Footer.tsx
+ * @brief The footer for the main site pages.
  * @author @Zentiph
  *
  * @copyright Copyright (C) 2025  CodeQuilt
@@ -20,37 +19,20 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-// this is simply an outline of the home page for the time being...
-
-import Footer from "../components/Footer";
-import Navbar from "../components/nav/Navbar";
-
-import "./Home.css";
-
-/* TODO: FIX RESIZING AT SMALLER WIDTHS */
+import "./Footer.css";
 
 /**
- * @returns Homepage
+ * The footer for the main site.
  */
-const Home = () => {
+const Footer = () => {
   return (
-    <>
-      <Navbar />
-
-      <header>
-        <h1>
-          <img src="/code-quilt-logo.svg" alt="CodeQuilt" />
-        </h1>
-        <div id="tagline">
-          A collection of <em>byte</em>-sized web projects
-        </div>
-      </header>
-
-      {/* sort games by x */}
-      {/* games */}
-      <Footer />
-    </>
+    <footer>
+      <div id="byline">
+        Made with love by the CodeQuilt team &hearts; {/* Heart symbol */}
+      </div>
+      <div id="copyright">&copy; 2025 CodeQuilt</div>
+    </footer>
   );
 };
 
-export default Home;
+export default Footer;

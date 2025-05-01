@@ -26,7 +26,7 @@ import Link from "../Link";
 import "./Navbar.css";
 
 /**
- * @returns Navbar header for the pages other than projects
+ * Navbar header for the pages other than projects.
  */
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);

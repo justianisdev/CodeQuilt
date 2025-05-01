@@ -22,6 +22,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 /* USE THIS FILE FOR GLOBAL STYLES */
 
 @import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap');
 
 :root {
    --theme-color:        #780116;
@@ -34,6 +35,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
    --background-color:   #f3ccbf;
 
    --playful-font-family: Atma, "Arial Rounded MT Bold", "Arial Narrow", sans-serif;
+   --theme-font-family: ABeeZee, Arial, sans-serif;
 
    --main-site-width: 70%;
 

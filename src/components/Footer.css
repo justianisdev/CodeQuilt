@@ -1,0 +1,82 @@
+/*
+Styles for the main site's footer.
+Author: Zentiph
+
+Copyright (C) 2025  CodeQuilt
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+*/
+
+/* TODO: MAKE IT LOOK LIKE THE NAVBAR */
+
+footer {
+   margin-top: 20px;
+
+   text-align: center;
+   font-family: var(--playful-font-family);
+   font-size: 1.25em;
+   color: var(--accent-color-bold);
+
+   background-color: var(--theme-color);
+
+   display: flex;
+   gap: 100px;
+   justify-content: center;
+
+   position: fixed;
+   bottom: 0;
+   left: 0;
+
+   /* Don't include horizontal padding in the width */
+   width: calc(100% - 2 * var(--navbar-padding-left-right));
+   height: calc(var(--navbar-height) / 2);
+   padding: var(--navbar-padding-top) var(--navbar-padding-left-right);
+}
+/* Add stitch effect */
+footer::before {
+   content: "";
+
+   position: absolute;
+   top: var(--navbar-after-height);
+   left: 0;
+   right: 0;
+   height: var(--navbar-stitch-height);
+   min-height: 2px;
+
+   background-image: url("/stitch-accent-bold.svg");
+   background-position: center;
+}
+
+@media (max-width: 950px) {
+   footer {
+      gap: 20px;
+      justify-content: space-between;
+   }
+}
+@media (max-width: 675px) {
+   #byline {
+      display: none;
+   }
+   footer {
+      justify-content: center;
+   }
+}
+
+#copyright {
+   margin: 0;
+   padding: 0;
+}
+#byline, #copyright {
+   margin-top: 5px;
+}

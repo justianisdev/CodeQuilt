@@ -39,14 +39,14 @@ nav {
    /* Don't include horizontal padding in the width */
    width: calc(100% - 2 * var(--navbar-padding-left-right));
    height: calc(var(--navbar-height) / 2);
-
    padding: var(--navbar-padding-top) var(--navbar-padding-left-right) 30px var(--navbar-padding-left-right);
+
    background-color: var(--theme-color);
    /* box-shadow: 0 -5px 5px 10px rgba(0, 0, 0, 0.5); */
 
    font-family: var(--playful-font-family);
 }
-/* add stitch effect */
+/* Add stitch effect */
 nav::after {
    content: "";
 

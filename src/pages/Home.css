@@ -28,5 +28,23 @@ body {
 }
 
 header {
-   margin-top: calc(var(--navbar-height) + var(--navbar-after-height) + 50px);
+   /* Account for the navbar height, it's after effect height,
+      and add some extra spacing */
+   margin-top: calc(var(--navbar-height)
+               + var(--navbar-after-height)
+               + 75px);
+   text-align: center;
+}
+header h1 {
+   width: 400px;
+   margin: auto;
+   margin-bottom: 20px;
+}
+header h1 img {
+   width: 100%;
+   height: auto;
+}
+#tagline {
+   font-size: 1.7em;
+   font-family: var(--theme-font-family);
 }
