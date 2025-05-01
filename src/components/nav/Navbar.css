@@ -99,7 +99,7 @@ li {
    #right-nav ul { margin-right: 10px; }
 }
 /* Dropdown menu for smaller widths */
-@media (max-width: 670px) {
+@media (max-width: 500px) {
    ul {
       display: none;
       flex-direction: column;
