@@ -23,29 +23,31 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 :root {
    --navbar-padding-top: 15px;
-   /* To match 80% width effect for main site */
-   --navbar-padding-left-right: calc((100% - var(--main-site-width)) / 2);
+   /* To match width effect for main site */
    --navbar-stitch-height: calc(var(--navbar-height) / 40);
 }
 
 nav {
-   position: fixed;
+   position: relative;
    top: 0;
    left: 0;
    z-index: 200;
 
+   width: 100%;
+   height: var(--navbar-height);
+   padding: var(--navbar-padding-top) 0 30px 0;
+
+   background-color: var(--theme-color);
+
+   font-family: var(--playful-font-family);
+}
+nav .container {
+   width: 70%;
+   margin: 0 auto;
    display: flex;
    justify-content: space-between;
    align-items: center;
-   /* Don't include horizontal padding in the width */
-   width: calc(100% - 2 * var(--navbar-padding-left-right));
-   height: calc(var(--navbar-height) / 2);
-   padding: var(--navbar-padding-top) var(--navbar-padding-left-right) 30px var(--navbar-padding-left-right);
-
-   background-color: var(--theme-color);
-   /* box-shadow: 0 -5px 5px 10px rgba(0, 0, 0, 0.5); */
-
-   font-family: var(--playful-font-family);
+   height: 100%;
 }
 /* Add stitch effect */
 nav::after {
@@ -91,15 +93,15 @@ li {
 
 /* Remove width outside spacing before going to hamburger men */
 @media (max-width: 950px) {
-   nav {
+   nav .container {
       width: 100%;
-      padding: var(--navbar-padding-top) 0 30px 0;
    }
 
    #logo { margin-left: 10px; }
    #right-nav ul { margin-right: 10px; }
 }
 /* Dropdown menu for smaller widths */
+/* TODO: FIX ALLA DIS */
 @media (max-width: 500px) {
    ul {
       display: none;

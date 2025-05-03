@@ -37,62 +37,64 @@ const Navbar = () => {
 
   return (
     <nav>
-      <div id="left-nav">
-        <div id="logo">
-          <Link href="/">
-            <img
-              className="transition grow-on-hover"
-              src="/code-quilt-icon-accent-bold.svg"
-              alt="CodeQuilt"
-            />
-          </Link>
+      <div className="container">
+        <div id="left-nav">
+          <div id="logo">
+            <Link href="/">
+              <img
+                className="transition grow-on-hover"
+                src="/code-quilt-icon-accent-bold.svg"
+                alt="CodeQuilt"
+              />
+            </Link>
+          </div>
+          <ul className={menuOpen ? "show" : ""}>
+            {/* TODO: UPDATE THESE LINKS WHEN AVAILABLE */}
+            <li>
+              {/* Browse all games rather than the select few displayed on the homepage */}
+              <Link href="#">
+                <span className="transition grow-on-hover">Browse</span>
+              </Link>
+            </li>
+            <li>
+              {/* About this project and the devs */}
+              <Link href="#">
+                <span className="transition grow-on-hover">Meet the Team</span>
+              </Link>
+            </li>
+          </ul>
         </div>
-        <ul className={menuOpen ? "show" : ""}>
-          {/* TODO: UPDATE THESE LINKS WHEN AVAILABLE */}
-          <li>
-            {/* Browse all games rather than the select few displayed on the homepage */}
-            <Link href="#">
-              <span className="transition grow-on-hover">Browse</span>
-            </Link>
-          </li>
-          <li>
-            {/* About this project and the devs */}
-            <Link href="#">
-              <span className="transition grow-on-hover">Meet the Team</span>
-            </Link>
-          </li>
-        </ul>
-      </div>
 
-      <div id="right-nav">
-        <ul>
-          <li>
-            <Link
-              href="https://github.com/justianisdev/CodeQuilt"
-              className="img-link"
-            >
-              <img
-                src="/github.svg"
-                alt="CodeQuilt GitHub"
-                className="transition grow-on-hover"
-              />
-            </Link>
-          </li>
-          <li>
-            <Link href="https://ko-fi.com/zentiph" className="img-link">
-              <img
-                src="/ko-fi.svg"
-                alt="CodeQuilt Ko-Fi for donations"
-                className="transition grow-on-hover"
-              />
-            </Link>
-          </li>
-        </ul>
-      </div>
+        <div id="right-nav">
+          <ul>
+            <li>
+              <Link
+                href="https://github.com/justianisdev/CodeQuilt"
+                className="img-link"
+              >
+                <img
+                  src="/github.svg"
+                  alt="CodeQuilt GitHub"
+                  className="transition grow-on-hover"
+                />
+              </Link>
+            </li>
+            <li>
+              <Link href="https://ko-fi.com/zentiph" className="img-link">
+                <img
+                  src="/ko-fi.svg"
+                  alt="CodeQuilt Ko-Fi for donations"
+                  className="transition grow-on-hover"
+                />
+              </Link>
+            </li>
+          </ul>
+        </div>
 
-      <button id="hamburger" onClick={toggleMenu}>
-        <img src="/burger-menu.svg" alt="Menu" />
-      </button>
+        <button id="hamburger" onClick={toggleMenu}>
+          <img src="/burger-menu.svg" alt="Menu" />
+        </button>
+      </div>
     </nav>
   );
 };

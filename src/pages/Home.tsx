@@ -32,9 +32,8 @@ import "./Home.css";
 const Home = () => {
   return (
     <>
+      <Navbar />
       <div id="content-wrapper">
-        <Navbar />
-
         <header>
           <img src="/code-quilt-logo.svg" alt="CodeQuilt" />
           <h1>CodeQuilt</h1>
