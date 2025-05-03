@@ -21,11 +21,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 /* TODO: MAKE HAMBURGER MENU LOOK BETTER */
 /* TODO: MAKE HEADER NOT FOLLOW SCROLL */
 
-:root {
-   --navbar-padding-top: 15px;
-   /* To match width effect for main site */
-   --navbar-stitch-height: calc(var(--navbar-height) / 40);
-}
 
 nav {
    position: relative;
@@ -34,8 +29,8 @@ nav {
    z-index: 200;
 
    width: 100%;
-   height: var(--navbar-height);
-   padding: var(--navbar-padding-top) 0 30px 0;
+   height: 25px;
+   padding: 15px 0 30px 0;
 
    background-color: var(--theme-color);
 
@@ -54,10 +49,10 @@ nav::after {
    content: "";
 
    position: absolute;
-   bottom: var(--navbar-after-height);
+   bottom: 10px;
    left: 0;
    right: 0;
-   height: var(--navbar-stitch-height);
+   height: 2px;
    min-height: 2px;
 
    background-image: url("/stitch-accent-bold.svg");
@@ -108,7 +103,8 @@ li {
       flex-direction: column;
       gap: 10px;
 
-      top: calc(var(--navbar-height) + var(--navbar-padding-top) / 2);
+      position: absolute;
+      top: 70px;
       right: 0;
       width: 150px;
       padding: 10px;
@@ -117,7 +113,6 @@ li {
       background-color: var(--theme-color);
 
       z-index: 256;
-      position: fixed;
     }
    ul.show { display: flex; }
    #hamburger {

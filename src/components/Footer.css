@@ -38,19 +38,19 @@ footer {
    left: 0;
 
    width: 100%;
-   height: var(--navbar-height);
-   padding: var(--navbar-padding-top) 0;
+   height: 20px;
+   padding: 15px 0;
 }
 /* Add stitch effect */
 footer::before {
    content: "";
 
    position: absolute;
-   top: var(--navbar-after-height);
+   top: 10px;
    left: 0;
    right: 0;
 
-   height: var(--navbar-stitch-height);
+   height: 2px;
    min-height: 2px;
 
    background-image: url("/stitch-accent-bold.svg");

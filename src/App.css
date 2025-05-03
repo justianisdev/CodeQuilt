@@ -28,19 +28,16 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
    --theme-color:        #780116;
    --theme-color-muted:  #764750;
    --theme-color-dark:   #4b000e;
+
    --accent-color:       #db7c26;
    --accent-color-bold:  #f7b538;
    --accent-color-light: #ffde9e;
    --accent-color-muted: #d8572a;
+
    --background-color:   #f3ccbf;
 
    --playful-font-family: Atma, "Arial Rounded MT Bold", "Arial Narrow", sans-serif;
    --theme-font-family: ABeeZee, Arial, sans-serif;
-
-   --main-site-width: 70%;
-
-   --navbar-height: 25px;
-   --navbar-after-height: 10px;
 }
 
 body, #root {

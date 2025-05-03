@@ -32,6 +32,9 @@ interface LinkProps {
 }
 
 /**
+ * A simplified anchor.
+ * This component will automatically open external links in a new tab.
+ *
  * @param href      - Link to resource
  * @param className - Classes to apply to the link
  * @param children  - HTML children
