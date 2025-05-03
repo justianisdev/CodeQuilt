@@ -39,7 +39,7 @@ body {
 header {
    /* Account for the navbar height, its after effect height,
       and add some extra spacing */
-   margin-top: 150px;
+   margin-top: 180px;
    text-align: center;
 }
 header h1 {

@@ -19,7 +19,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
 /* TODO: MAKE HAMBURGER MENU LOOK BETTER */
-/* TODO: MAKE HEADER NOT FOLLOW SCROLL */
 
 
 nav {
@@ -119,6 +118,21 @@ li {
       display: block;
       margin-right: 10px;
    }
+}
+
+.grow-on-hover {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   display: inline-block;
+   transition: transform 0.1s ease;
+}
+.grow-on-hover:hover, .grow-on-hover:focus {
+   transform: scale(1.05);
+
+   /* Increase hit-box size while maintaining correct size */
+   padding: 15px;
+   margin: -15px;
 }
 
 #left-nav, #right-nav {

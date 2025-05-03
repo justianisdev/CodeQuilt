@@ -28,6 +28,8 @@
  * IT WILL BE REUSED LATER!
  */
 
+/** TODO: WHEN YOU IMPLEMENT THIS, FIX THE "transition" CLASSES */
+
 import { useState } from "react";
 import "./SearchQuery.css";
 

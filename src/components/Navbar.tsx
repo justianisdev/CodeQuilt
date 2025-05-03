@@ -42,7 +42,7 @@ const Navbar = () => {
           <div id="logo">
             <Link href="/">
               <img
-                className="transition grow-on-hover"
+                className="grow-on-hover"
                 src="/code-quilt-icon-accent-bold.svg"
                 alt="CodeQuilt"
               />
@@ -53,13 +53,13 @@ const Navbar = () => {
             <li>
               {/* Browse all games rather than the select few displayed on the homepage */}
               <Link href="#">
-                <span className="transition grow-on-hover">Browse</span>
+                <span className="grow-on-hover">Browse</span>
               </Link>
             </li>
             <li>
               {/* About this project and the devs */}
               <Link href="#">
-                <span className="transition grow-on-hover">Meet the Team</span>
+                <span className="grow-on-hover">Meet the Team</span>
               </Link>
             </li>
           </ul>
@@ -75,7 +75,7 @@ const Navbar = () => {
                 <img
                   src="/github.svg"
                   alt="CodeQuilt GitHub"
-                  className="transition grow-on-hover"
+                  className="grow-on-hover"
                 />
               </Link>
             </li>
@@ -84,7 +84,7 @@ const Navbar = () => {
                 <img
                   src="/ko-fi.svg"
                   alt="CodeQuilt Ko-Fi for donations"
-                  className="transition grow-on-hover"
+                  className="grow-on-hover"
                 />
               </Link>
             </li>

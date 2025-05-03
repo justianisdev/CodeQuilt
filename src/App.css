@@ -47,20 +47,3 @@ body, #root {
    height: 100%;
    box-sizing: border-box;
 }
-
-.transition { transition: all 0.3s ease; }
-
-.grow-on-hover {
-   width: 100%;
-   height: 100%;
-   object-fit: cover;
-
-   display: inline-block;
-}
-.grow-on-hover:hover, .grow-on-hover:focus {
-   transform: scale(1.05);
-
-   /* Increase hit-box size while maintaining correct size */
-   padding: 15px;
-   margin: -15px;
-}

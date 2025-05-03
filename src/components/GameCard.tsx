@@ -31,14 +31,22 @@ interface GameCardProps {
   alt: string;
   title: string;
   desc: string;
+  className?: string;
 }
 
 /**
  * A card containing information about a game.
  */
-const GameCard: FC<GameCardProps> = ({ href, imgSrc, alt, title, desc }) => {
+const GameCard: FC<GameCardProps> = ({
+  href,
+  imgSrc,
+  alt,
+  title,
+  desc,
+  className,
+}) => {
   return (
-    <div className="game-card">
+    <div className={"game-card " + className}>
       <Link href={href}>
         <img src={imgSrc} alt={alt} />
       </Link>
