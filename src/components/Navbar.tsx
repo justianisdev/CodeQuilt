@@ -21,7 +21,7 @@
 
 import { useState } from "react";
 
-import Link from "../Link";
+import Link from "./Link";
 
 import "./Navbar.css";
 

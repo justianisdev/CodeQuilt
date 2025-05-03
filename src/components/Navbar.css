@@ -18,7 +18,8 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
-/* TODO: MAKE THE NAVBAR RESPONSIVE TO RESIZING */
+/* TODO: MAKE HAMBURGER MENU LOOK BETTER */
+/* TODO: MAKE HEADER NOT FOLLOW SCROLL */
 
 :root {
    --navbar-padding-top: 15px;
