@@ -23,7 +23,16 @@ body {
    background-image: url("/quilt-pattern.png");
    background-repeat: repeat;
    background-position: center;
-   width: var(--main-site-width);
+
+   font-family: var(--theme-font-family);
+
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+   margin: 0;
+}
+#content-wrapper {
+   width: 70%;
    margin: auto;
 }
 
@@ -45,7 +54,16 @@ header img {
 }
 #tagline {
    font-size: 2em;
-   font-family: var(--theme-font-family);
+}
+
+main {
+   margin-top: 140px;
+   flex: 1;
+}
+main h2 {
+   text-align: center;
+   font-weight: normal;
+   font-size: 2.5em;
 }
 
 @media (max-width: 1000px) {

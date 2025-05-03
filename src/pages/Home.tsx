@@ -20,8 +20,9 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
+import GameCard from "../components/GameCard";
 import Footer from "../components/Footer";
-import Navbar from "../components/nav/Navbar";
+import Navbar from "../components/Navbar";
 
 import "./Home.css";
 
@@ -31,19 +32,51 @@ import "./Home.css";
 const Home = () => {
   return (
     <>
-      <Navbar />
+      <div id="content-wrapper">
+        <Navbar />
 
-      <header>
-        <img src="/code-quilt-logo.svg" alt="CodeQuilt" />
-        <h1>CodeQuilt</h1>
-        <div id="tagline">
-          A collection of <em>byte</em>‑sized web projects
-        </div>
-      </header>
+        <header>
+          <img src="/code-quilt-logo.svg" alt="CodeQuilt" />
+          <h1>CodeQuilt</h1>
+          <div id="tagline">
+            A collection of <em>byte</em>‑sized web projects
+          </div>
+        </header>
 
-      {/* TODO: sort games by x */}
-      {/* Note from Zen: Maybe move this ^ to the browse page and simply display featured games on the main page? */}
-      {/* TODO: games */}
+        <main>
+          <h2>Featured Projects</h2>
+
+          <section id="featured-games">
+            <GameCard
+              imgSrc="https://placehold.co/600x400"
+              alt="Game picture"
+              title="Test1"
+              desc="Test1 desc"
+            />
+
+            <GameCard
+              imgSrc="https://placehold.co/600x400"
+              alt="Game picture"
+              title="Test2"
+              desc="Test2 desc"
+            />
+
+            <GameCard
+              imgSrc="https://placehold.co/600x400"
+              alt="Game picture"
+              title="Test3"
+              desc="Test3 desc"
+            />
+
+            <GameCard
+              imgSrc="https://placehold.co/600x400"
+              alt="Game picture"
+              title="Test4"
+              desc="Test4 desc"
+            />
+          </section>
+        </main>
+      </div>
 
       <Footer />
     </>
