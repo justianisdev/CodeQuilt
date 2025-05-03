@@ -29,10 +29,11 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.3);
 
    transform: scale(1);
-   transition: transform 0.3s ease;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .game-card:hover {
    transform: scale(1.05);
+   box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.2);
 }
 
 img {
