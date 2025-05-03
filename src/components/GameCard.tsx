@@ -1,7 +1,6 @@
 /**
- * @file  Link.tsx
- * @brief Link component that contains an href attribute
- *        and can contain ReactNodes as children.
+ * @file GameCard.tsx
+ * @brief A card display used to describe a game.
  * @author @Zentiph
  *
  * @copyright Copyright (C) 2025  CodeQuilt
@@ -20,34 +19,33 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-import React from "react";
 import { FC } from "react";
 
-import "./Link.css";
+import Link from "./Link";
 
-interface LinkProps {
+import "./GameCard.css";
+
+interface GameCardProps {
   href: string;
-  className?: string;
-  children: React.ReactNode;
+  imgSrc: string;
+  alt: string;
+  title: string;
+  desc: string;
 }
 
 /**
- * @param href      - Link to resource
- * @param className - Classes to apply to the link
- * @param children  - HTML children
+ * A card containing information about a game.
  */
-const Link: FC<LinkProps> = ({ href, className, children }) => {
-  const isExternal = /^https?:\/\//.test(href);
-
+const GameCard: FC<GameCardProps> = ({ href, imgSrc, alt, title, desc }) => {
   return (
-    <a
-      href={href}
-      className={"link " + className}
-      target={isExternal ? "_blank" : ""}
-    >
-      {children}
-    </a>
+    <div className="game-card">
+      <Link href={href}>
+        <img src={imgSrc} alt={alt} />
+      </Link>
+      <h3>{title}</h3>
+      <p>{desc}</p>
+    </div>
   );
 };
 
-export default Link;
+export default GameCard;

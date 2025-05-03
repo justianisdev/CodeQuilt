@@ -47,6 +47,7 @@ const Home = () => {
 
           <section id="featured-games">
             <GameCard
+              href="#"
               imgSrc="https://placehold.co/600x400"
               alt="Game picture"
               title="Test1"
@@ -54,6 +55,7 @@ const Home = () => {
             />
 
             <GameCard
+              href="#"
               imgSrc="https://placehold.co/600x400"
               alt="Game picture"
               title="Test2"
@@ -61,6 +63,7 @@ const Home = () => {
             />
 
             <GameCard
+              href="#"
               imgSrc="https://placehold.co/600x400"
               alt="Game picture"
               title="Test3"
@@ -68,6 +71,7 @@ const Home = () => {
             />
 
             <GameCard
+              href="#"
               imgSrc="https://placehold.co/600x400"
               alt="Game picture"
               title="Test4"
