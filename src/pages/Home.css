@@ -23,6 +23,7 @@ body {
    background-image: url("/quilt-pattern.png");
    background-repeat: repeat;
    background-position: center;
+   background-size: 10%;
 
    font-family: var(--theme-font-family);
 
