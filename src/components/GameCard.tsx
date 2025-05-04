@@ -46,13 +46,13 @@ const GameCard: FC<GameCardProps> = ({
   className,
 }) => {
   return (
-    <div className={"game-card " + className}>
-      <Link href={href}>
+    <Link href={href} className={"game-card " + className}>
+      <div>
         <img src={imgSrc} alt={alt} />
-      </Link>
-      <h3>{title}</h3>
-      <p>{desc}</p>
-    </div>
+        <h3>{title}</h3>
+        <p>{desc}</p>
+      </div>
+    </Link>
   );
 };
 
