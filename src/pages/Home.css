@@ -18,12 +18,11 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
-
 body {
    background-image: url("/quilt-pattern.png");
    background-repeat: repeat;
    background-position: center;
-   background-size: 10%;
+   background-size: 12%;
 
    font-family: var(--theme-font-family);
 
