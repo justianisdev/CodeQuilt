@@ -18,6 +18,8 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
+/* TODO: MAKE LOGO, TAGLINE, AND FEATURES HEADER STAND OUT MORE FROM BG */
+
 body {
    background-image: url("/quilt-pattern.png");
    background-repeat: repeat;
@@ -37,8 +39,6 @@ body {
 }
 
 header {
-   /* Account for the navbar height, its after effect height,
-      and add some extra spacing */
    margin-top: 180px;
    text-align: center;
 }
